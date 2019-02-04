@@ -1,0 +1,29 @@
+// Mixins in here
+.flex-it(@j-content: center, @a-items: center) {
+  display: flex;
+  justify-content: @j-content;
+  align-items: @a-items;
+}
+
+.style-btn() {
+  width: 40%;
+  margin: 10% auto 10%;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-left: 0;
+  padding: 3% 0;
+  border-radius: 5px;
+  border: 2px solid @main-bg;
+  color: @main-bg;
+  background-color: @button-bg;
+  .flex-it;
+  letter-spacing: 0.25rem;
+  cursor: pointer;
+
+  &:hover {
+    color: @button-bg;
+    background-color: @main-bg;
+    // transform: scale(1.15);
+    transition: all 0.5s;
+  }
+}

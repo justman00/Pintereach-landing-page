@@ -1,0 +1,290 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+.navigation {
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.navigation .burger-logo {
+  width: 10%;
+}
+.navigation .burger-logo img {
+  height: auto;
+}
+.content {
+  margin-top: 7%;
+}
+.content .intro-text {
+  width: 100%;
+  padding-bottom: 2.5%;
+  border-bottom: 5px solid orangered;
+}
+.content .intro-text a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  line-height: 2.5rem;
+  letter-spacing: 0.05rem;
+  color: black;
+}
+.content .intro-text a strong {
+  font-weight: 900;
+  letter-spacing: 0.35rem;
+}
+.primary {
+  margin-top: 8%;
+  border-bottom: 2px solid lightgray;
+}
+.primary-img {
+  width: 100%;
+  margin-bottom: 15%;
+}
+.primary-img img {
+  border-radius: 7px;
+}
+.primary-description h1 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: 0.35rem;
+}
+.primary-description p {
+  margin: 4% 0;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #a0a0a0;
+  word-spacing: 0.2rem;
+}
+.primary-description p strong {
+  font-weight: 900;
+}
+.primary-description .small-text {
+  margin: 4% 0 6%;
+  font-size: 1.4rem;
+  opacity: 0.4;
+  font-weight: 700;
+  color: black;
+}
+.primary-description .custom-btn {
+  width: 40%;
+  margin: 10% auto 10%;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-left: 0;
+  padding: 3% 0;
+  border-radius: 5px;
+  border: 2px solid orangered;
+  color: orangered;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.25rem;
+  cursor: pointer;
+}
+.primary-description .custom-btn:hover {
+  color: white;
+  background-color: orangered;
+  transition: all 0.5s;
+}
+.features {
+  margin-top: 8%;
+}
+.features-header {
+  width: 43%;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 0.25rem;
+  padding-bottom: 4%;
+  border-bottom: 3px solid orangered;
+  margin-bottom: 8%;
+}
+.features-card {
+  margin: 10% 0;
+}
+.features-card .icon {
+  width: 50px;
+  height: 50px;
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+  transform: rotate(45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.features-card .icon i {
+  font-size: 2rem;
+  transform: rotate(-45deg);
+  opacity: 0.6;
+  color: orangered;
+}
+.features-card .content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.features-card .content h3 {
+  font-size: 1.7rem;
+  font-weight: 900;
+  margin: 3% 0;
+}
+.features-card .content p {
+  margin: 4% 0;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #a0a0a0;
+  word-spacing: 0.2rem;
+}
+.features-card .content p strong {
+  font-weight: 900;
+}
