@@ -67,6 +67,7 @@
 
 .features {
   margin-top: 8%;
+  border-bottom: 2px solid lightgray;
   &-header {
     width: 43%;
     font-size: 2rem;
@@ -124,3 +125,74 @@
 }
 
 // brands section
+.section-tertiary {
+  margin-top: 7%;
+  .major {
+    width: 22%;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 0.25rem;
+    padding-bottom: 4%;
+
+    border-bottom: 3px solid orangered;
+
+    margin-bottom: 8%;
+  }
+
+  .brands {
+    .flex-it();
+    flex-direction: column;
+
+    .brand {
+      .flex-it(space-between);
+      padding: 5% 0;
+      border-bottom: 3px solid lightgrey;
+      //   flex-direction: column;
+
+      img {
+        margin: 5% 0;
+        width: 50%;
+      }
+
+      p {
+        width: 35%;
+        margin: 4% 0;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: #a0a0a0;
+        word-spacing: 0.2rem;
+
+        strong {
+          font-weight: 900;
+        }
+      }
+    }
+  }
+}
+
+.customers {
+  margin: 10% 0;
+  .major {
+    width: 50%;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 0.25rem;
+    padding-bottom: 4%;
+
+    border-bottom: 3px solid orangered;
+
+    margin-bottom: 8%;
+  }
+
+  p {
+    margin: 4% 0;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #a0a0a0;
+    word-spacing: 0.2rem;
+
+    strong {
+      font-weight: 900;
+    }
+  }
+}

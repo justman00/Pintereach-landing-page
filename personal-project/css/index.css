@@ -238,6 +238,7 @@ img {
 }
 .features {
   margin-top: 8%;
+  border-bottom: 2px solid lightgray;
 }
 .features-header {
   width: 43%;
@@ -287,4 +288,123 @@ img {
 }
 .features-card .content p strong {
   font-weight: 900;
+}
+.section-tertiary {
+  margin-top: 7%;
+}
+.section-tertiary .major {
+  width: 22%;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 0.25rem;
+  padding-bottom: 4%;
+  border-bottom: 3px solid orangered;
+  margin-bottom: 8%;
+}
+.section-tertiary .brands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section-tertiary .brands .brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 0;
+  border-bottom: 3px solid lightgrey;
+}
+.section-tertiary .brands .brand img {
+  margin: 5% 0;
+  width: 50%;
+}
+.section-tertiary .brands .brand p {
+  width: 35%;
+  margin: 4% 0;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #a0a0a0;
+  word-spacing: 0.2rem;
+}
+.section-tertiary .brands .brand p strong {
+  font-weight: 900;
+}
+.customers {
+  margin: 10% 0;
+}
+.customers .major {
+  width: 50%;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 0.25rem;
+  padding-bottom: 4%;
+  border-bottom: 3px solid orangered;
+  margin-bottom: 8%;
+}
+.customers p {
+  margin: 4% 0;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #a0a0a0;
+  word-spacing: 0.2rem;
+}
+.customers p strong {
+  font-weight: 900;
+}
+.carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 16px;
+}
+.carousel .left-button,
+.carousel .right-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: green;
+  font-size: 40px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2000;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.carousel .left-button:hover,
+.carousel .right-button:hover {
+  color: grey;
+  background-color: white;
+  border: 2px solid grey;
+}
+.carousel .left-button {
+  top: 50%;
+  left: 25px;
+  transform: translate(0, -50%);
+  display: none;
+}
+.carousel .right-button {
+  top: 50%;
+  right: 25px;
+  transform: translate(0, -50%);
+  display: none;
+}
+.carousel img {
+  width: 100%;
+  display: block;
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+.carousel .current {
+  display: block;
+  opacity: 1;
+  height: auto;
+  width: 100%;
+  transition: opacity 1.5s;
 }
