@@ -1,0 +1,44 @@
+footer {
+  min-width: 500px;
+  background-color: darkgray;
+  color: #fff;
+
+  padding: 10% 5% 5%;
+  .flex-it();
+  flex-direction: column;
+
+  .footer-main {
+    .flex-it(space-between, baseline);
+  }
+
+  address {
+    .flex-it(flex-start, flex-start);
+    flex-direction: column;
+
+    h3 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 10%;
+    }
+
+    p {
+      font-size: 1.4rem;
+      margin-bottom: 6%;
+    }
+  }
+
+  .final-text {
+    width: 50%;
+
+    p {
+      font-size: 1.4rem;
+      line-height: 1.5;
+    }
+  }
+
+  .copyright {
+    margin-top: 10%;
+    font-size: 1.4rem;
+    letter-spacing: 0.25rem;
+  }
+}
