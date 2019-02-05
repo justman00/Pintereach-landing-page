@@ -3,13 +3,30 @@
   margin-top: 5%;
   margin-bottom: 5%;
 
+  .flex-it(space-between);
+
   @media @tablet {
     margin-top: 2%;
     margin-bottom: 2%;
   }
 
+  .nav-items {
+    .flex-it(space-between);
+    width: 60%;
+
+    a {
+      text-decoration: none;
+      color: gray;
+      font-size: 1.8rem;
+      font-weight: 700;
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+
   .burger-logo {
     width: 10%;
+    cursor: pointer;
 
     @media @tablet {
       width: 5%;
