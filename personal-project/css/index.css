@@ -349,11 +349,6 @@ img {
     padding: 3%;
   }
 }
-.primary-description .custom-btn:hover {
-  color: white;
-  background-color: orangered;
-  transition: all 0.5s;
-}
 .features {
   margin-top: 8%;
   border-bottom: 2px solid lightgray;

@@ -9,10 +9,8 @@ TweenMax.from(burger, 0.7, {
 let toggle = true;
 const tags = document.querySelectorAll(".nav-items a");
 
+// makes the navigtation items appear and disappear
 burger.addEventListener("click", () => {
-  console.log("clicked");
-
-  //   TweenMax.set(tags, 1, {visibility: })
   if (toggle) {
     TweenMax.staggerTo(
       tags,
@@ -31,7 +29,6 @@ burger.addEventListener("click", () => {
       0.7,
       {
         opacity: 0,
-        // visibility: "hidden",
         ease: Back.easeIn
       },
       0.5
@@ -42,4 +39,39 @@ burger.addEventListener("click", () => {
     });
     toggle = true;
   }
+});
+
+// animate the button
+// it gets bigger on hover and back to normal on leaving it
+const btn = document.querySelector(".custom-btn");
+
+btn.addEventListener("mouseover", () => {
+  TweenMax.to(btn, 0.5, {
+    scale: 1.2,
+    backgroundColor: "#FF4500",
+    color: "#fff",
+    ease: Bounce.easeOut
+  });
+});
+
+btn.addEventListener("mouseout", () => {
+  TweenMax.to(btn, 0.5, {
+    scale: 1,
+    color: "#FF4500",
+    backgroundColor: "#fff",
+    ease: Back.easeIn
+  });
+});
+
+// animate the icons in my Features section, they rotate now
+const icons = document.querySelectorAll(".icon");
+
+let rotate = 45;
+
+icons.forEach(icon => {
+  icon.addEventListener("mouseover", () => {
+    TweenMax.to(icon, 0.5, {
+      rotation: rotate + 360
+    });
+  });
 });
