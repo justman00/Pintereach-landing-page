@@ -1,5 +1,9 @@
 .content {
   margin-top: 7%;
+
+  @media @tablet {
+    margin-top: 3%;
+  }
   .intro-text {
     width: 100%;
     padding-bottom: 2.5%;
@@ -10,6 +14,9 @@
       line-height: 2.5rem;
       letter-spacing: 0.05rem;
       color: black;
+      @media @tablet {
+        font-size: 2rem;
+      }
       strong {
         font-weight: 900;
         letter-spacing: 0.35rem;
@@ -24,11 +31,24 @@
   margin-top: 8%;
   border-bottom: 2px solid lightgray;
 
+  @media @tablet {
+    margin-top: 5%;
+  }
+
   &-img {
     width: 100%;
     margin-bottom: 15%;
+    @media @tablet {
+      margin-bottom: 5%;
+    }
+
+    .flex-it();
     img {
       border-radius: 7px;
+
+      @media @tablet {
+        width: 100%;
+      }
     }
   }
 
@@ -37,6 +57,13 @@
       font-size: 2.2rem;
       font-weight: 900;
       letter-spacing: 0.35rem;
+
+      @media @tablet {
+        font-size: 4rem;
+        letter-spacing: 0.1rem;
+        font-family: "Roboto Slab", serif;
+        font-weight: 900;
+      }
     }
 
     p {
@@ -45,6 +72,10 @@
       line-height: 2rem;
       color: #a0a0a0;
       word-spacing: 0.2rem;
+
+      @media @tablet {
+        margin: 2.5% 0;
+      }
 
       strong {
         font-weight: 900;
@@ -57,6 +88,11 @@
       opacity: 0.4;
       font-weight: 700;
       color: black;
+
+      @media @tablet {
+        margin: 4% 0;
+        font-size: 1.6rem;
+      }
     }
 
     .custom-btn {
@@ -68,6 +104,12 @@
 .features {
   margin-top: 8%;
   border-bottom: 2px solid lightgray;
+
+  @media @tablet {
+    .flex-it(flex-start, flex-start);
+    flex-direction: column;
+    padding-bottom: 3%;
+  }
   &-header {
     width: 43%;
     font-size: 2rem;
@@ -78,9 +120,23 @@
     border-bottom: 3px solid orangered;
 
     margin-bottom: 8%;
+
+    @media @tablet {
+      font-size: 3rem;
+      font-family: "Roboto slab", serif;
+      padding-bottom: 2%;
+      margin-bottom: 4%;
+      width: 30%;
+    }
   }
   &-card {
     margin: 10% 0;
+
+    @media @tablet {
+      .flex-it(flex-start, center);
+      margin: 4% 0;
+      // flex-direction: column;
+    }
     .icon {
       // margin-top: 7%;
       width: 50px;
@@ -91,11 +147,19 @@
       // margin: 0 auto;
       .flex-it();
 
+      @media @tablet {
+        width: 100px;
+        height: 100px;
+      }
+
       i {
         font-size: 2rem;
         transform: rotate(-45deg);
         opacity: 0.6;
         color: orangered;
+        @media @tablet {
+          font-size: 4.5rem;
+        }
       }
     }
 
@@ -103,10 +167,20 @@
       .flex-it(flex-start, flex-start);
       flex-direction: column;
 
+      @media @tablet {
+        width: 70%;
+        margin-left: 7%;
+      }
+
       h3 {
         font-size: 1.7rem;
         font-weight: 900;
         margin: 3% 0;
+
+        @media @tablet {
+          margin: 0;
+          font-size: 2.2rem;
+        }
       }
 
       p {
@@ -115,6 +189,10 @@
         line-height: 2rem;
         color: #a0a0a0;
         word-spacing: 0.2rem;
+
+        @media @tablet {
+          font-size: 1.6rem;
+        }
 
         strong {
           font-weight: 900;
@@ -137,6 +215,15 @@
     border-bottom: 3px solid orangered;
 
     margin-bottom: 8%;
+
+    @media @tablet {
+      font-size: 3rem;
+      font-family: "Roboto slab", serif;
+      padding-bottom: 2%;
+      margin-bottom: 4%;
+      width: 17%;
+      margin-bottom: 0;
+    }
   }
 
   .brands {
@@ -152,6 +239,10 @@
       img {
         margin: 5% 0;
         width: 50%;
+
+        @media @tablet {
+          width: 45%;
+        }
       }
 
       p {
@@ -165,6 +256,14 @@
         strong {
           font-weight: 900;
         }
+
+        @media @tablet {
+          font-size: 1.6rem;
+          // font-family: "Roboto slab", serif;
+          // padding-bottom: 2%;
+          // margin-bottom: 4%;
+          width: 45%;
+        }
       }
     }
   }
@@ -172,6 +271,9 @@
 
 .customers {
   margin: 10% 0 0;
+  @media @tablet {
+    margin-bottom: 5%;
+  }
   .major {
     width: 50%;
     font-size: 2rem;
@@ -182,6 +284,14 @@
     border-bottom: 3px solid orangered;
 
     margin-bottom: 8%;
+
+    @media @tablet {
+      font-size: 3rem;
+      font-family: "Roboto slab", serif;
+      padding-bottom: 2%;
+      margin-bottom: 4%;
+      width: 35%;
+    }
   }
 
   p {
@@ -193,6 +303,10 @@
 
     strong {
       font-weight: 900;
+    }
+
+    @media @tablet {
+      font-size: 1.6rem;
     }
   }
 }

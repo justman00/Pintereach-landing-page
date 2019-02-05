@@ -46,14 +46,15 @@ img {
 }
 
 .container {
-  min-width: 500px;
+  max-width: 500px;
   width: 100%;
   margin: 0 auto;
   padding-left: 5%;
   padding-right: 5%;
 
-  // @media @tablet {
-  //   padding-left: 5%;
-  //   padding-right: 5%;
-  // }
+  @media @tablet {
+    max-width: 800px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
 }
