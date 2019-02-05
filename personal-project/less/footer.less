@@ -8,12 +8,20 @@ footer {
   .flex-it();
   flex-direction: column;
 
+  @media @desktop {
+    padding: 5% 5% 3%;
+  }
+
   .footer-main {
     .flex-it(space-between, baseline);
     max-width: 500px;
 
     @media @tablet {
       max-width: 800px;
+    }
+
+    @media @desktop {
+      max-width: 1000px;
     }
   }
 
@@ -69,6 +77,10 @@ footer {
 
     @media @tablet {
       font-size: 1.6rem;
+    }
+
+    @media @desktop {
+      margin-top: 5%;
     }
   }
 }

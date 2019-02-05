@@ -35,11 +35,20 @@
     margin-top: 5%;
   }
 
+  @media @desktop {
+    .flex-it(space-between, flex-start);
+    padding-bottom: 3%;
+  }
+
   &-img {
     width: 100%;
     margin-bottom: 15%;
     @media @tablet {
       margin-bottom: 5%;
+    }
+
+    @media @desktop {
+      width: 50%;
     }
 
     .flex-it();
@@ -53,6 +62,9 @@
   }
 
   &-description {
+    @media @desktop {
+      width: 45%;
+    }
     h1 {
       font-size: 2.2rem;
       font-weight: 900;
@@ -110,6 +122,14 @@
     flex-direction: column;
     padding-bottom: 3%;
   }
+
+  .cards {
+    @media @desktop {
+      .flex-it(space-between, flex-start);
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
   &-header {
     width: 43%;
     font-size: 2rem;
@@ -128,6 +148,10 @@
       margin-bottom: 4%;
       width: 30%;
     }
+
+    @media @desktop {
+      width: 26.5%;
+    }
   }
   &-card {
     margin: 10% 0;
@@ -136,6 +160,9 @@
       .flex-it(flex-start, center);
       margin: 4% 0;
       // flex-direction: column;
+    }
+    @media @desktop {
+      width: 47%;
     }
     .icon {
       // margin-top: 7%;
@@ -152,6 +179,11 @@
         height: 100px;
       }
 
+      @media @desktop {
+        width: 75px;
+        height: 75px;
+      }
+
       i {
         font-size: 2rem;
         transform: rotate(-45deg);
@@ -159,6 +191,9 @@
         color: orangered;
         @media @tablet {
           font-size: 4.5rem;
+        }
+        @media @desktop {
+          font-size: 3.5rem;
         }
       }
     }
@@ -224,6 +259,10 @@
       width: 17%;
       margin-bottom: 0;
     }
+
+    @media @desktop {
+      width: 14%;
+    }
   }
 
   .brands {
@@ -264,6 +303,10 @@
           // margin-bottom: 4%;
           width: 45%;
         }
+
+        @media @desktop {
+          font-size: 1.8rem;
+        }
       }
     }
   }
@@ -292,6 +335,10 @@
       margin-bottom: 4%;
       width: 35%;
     }
+
+    @media @desktop {
+      width: 32%;
+    }
   }
 
   p {
@@ -307,6 +354,10 @@
 
     @media @tablet {
       font-size: 1.6rem;
+    }
+
+    @media @desktop {
+      font-size: 1.8rem;
     }
   }
 }
