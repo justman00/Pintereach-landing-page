@@ -3,7 +3,8 @@ const burger = document.querySelector(".burger-logo");
 TweenMax.from(burger, 0.7, {
   y: -150,
   opacity: 0,
-  ease: Back.easeOut
+  ease: Back.easeOut,
+  delay: 1
 });
 
 let toggle = true;
@@ -17,7 +18,9 @@ burger.addEventListener("click", () => {
       1,
       {
         visibility: "visible",
+        height: "100%",
         opacity: 1,
+        padding: "5%",
         ease: Back.easeOut
       },
       0.5
@@ -29,13 +32,16 @@ burger.addEventListener("click", () => {
       0.7,
       {
         opacity: 0,
+        padding: 0,
         ease: Back.easeIn
       },
       0.5
     );
-    TweenMax.to(tags, 0.1, {
+    TweenMax.to(tags, 0.00001, {
       visibility: "hidden",
-      delay: 2
+      height: 0,
+      padding: 0,
+      delay: 2.5
     });
     toggle = true;
   }
@@ -73,5 +79,13 @@ icons.forEach(icon => {
     TweenMax.to(icon, 0.5, {
       rotation: rotate + 360
     });
+  });
+});
+
+// make everything appear on load
+window.addEventListener("load", () => {
+  TweenMax.from("body", 1, {
+    opacity: 0,
+    delay: 0.2
   });
 });

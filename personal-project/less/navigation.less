@@ -3,24 +3,47 @@
   margin-top: 5%;
   margin-bottom: 5%;
 
-  .flex-it(space-between);
+  .flex-it(space-between, flex-start);
+  flex-direction: column;
 
   @media @tablet {
+    align-items: center;
+    flex-direction: row;
     margin-top: 2%;
     margin-bottom: 2%;
   }
 
   .nav-items {
     .flex-it(space-between);
-    width: 60%;
+    flex-direction: column;
+    margin-top: 5%;
+    @media @tablet {
+      flex-direction: row;
+      margin-top: 0;
+      width: 60%;
+    }
+
+    width: 100%;
 
     a {
+      padding: 0;
+      border-top: 2px solid orangered;
+      width: 100%;
+      text-align: center;
+
       text-decoration: none;
       color: gray;
       font-size: 1.8rem;
       font-weight: 700;
       visibility: hidden;
+      height: 0;
       opacity: 0;
+    }
+
+    @media @tablet {
+      flex-direction: row;
+      border-top: 0;
+      width: auto;
     }
   }
 

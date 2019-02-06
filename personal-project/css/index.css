@@ -140,9 +140,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+::selection {
+  color: white;
+  background: orangered;
+}
 .container {
   max-width: 500px;
-  width: 100%;
   margin: 0 auto;
   padding-left: 5%;
   padding-right: 5%;
@@ -167,10 +170,13 @@ img {
   margin-bottom: 5%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 @media (min-width: 768px) {
   .navigation {
+    align-items: center;
+    flex-direction: row;
     margin-top: 2%;
     margin-bottom: 2%;
   }
@@ -179,15 +185,36 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 60%;
+  flex-direction: column;
+  margin-top: 5%;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .navigation .nav-items {
+    flex-direction: row;
+    margin-top: 0;
+    width: 60%;
+  }
 }
 .navigation .nav-items a {
+  padding: 0;
+  border-top: 2px solid orangered;
+  width: 100%;
+  text-align: center;
   text-decoration: none;
   color: gray;
   font-size: 1.8rem;
   font-weight: 700;
   visibility: hidden;
+  height: 0;
   opacity: 0;
+}
+@media (min-width: 768px) {
+  .navigation .nav-items {
+    flex-direction: row;
+    border-top: 0;
+    width: auto;
+  }
 }
 .navigation .burger-logo {
   width: 10%;
@@ -377,16 +404,26 @@ img {
   font-weight: 900;
   letter-spacing: 0.25rem;
   padding-bottom: 4%;
+  padding-top: 4%;
+  text-align: center;
   border-bottom: 3px solid orangered;
   margin-bottom: 8%;
 }
+.features-header:hover {
+  background-color: orangered;
+  color: white;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  transition: all 0.5s;
+}
 @media (min-width: 768px) {
   .features-header {
+    padding-top: 2%;
     font-size: 3rem;
     font-family: "Roboto slab", serif;
     padding-bottom: 2%;
     margin-bottom: 4%;
-    width: 30%;
+    width: 32%;
   }
 }
 @media (min-width: 1000px) {
@@ -495,22 +532,32 @@ img {
   font-weight: 900;
   letter-spacing: 0.25rem;
   padding-bottom: 4%;
+  padding-top: 4%;
   border-bottom: 3px solid orangered;
   margin-bottom: 8%;
+  text-align: center;
+}
+.section-tertiary .major:hover {
+  background-color: orangered;
+  color: white;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  transition: all 0.5s;
 }
 @media (min-width: 768px) {
   .section-tertiary .major {
+    padding-top: 2%;
     font-size: 3rem;
     font-family: "Roboto slab", serif;
     padding-bottom: 2%;
     margin-bottom: 4%;
-    width: 17%;
+    width: 19%;
     margin-bottom: 0;
   }
 }
 @media (min-width: 1000px) {
   .section-tertiary .major {
-    width: 14%;
+    width: 15%;
   }
 }
 .section-tertiary .brands {
@@ -571,21 +618,31 @@ img {
   font-weight: 900;
   letter-spacing: 0.25rem;
   padding-bottom: 4%;
+  padding-top: 4%;
+  text-align: center;
   border-bottom: 3px solid orangered;
   margin-bottom: 8%;
 }
+.customers .major:hover {
+  background-color: orangered;
+  color: white;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  transition: all 0.5s;
+}
 @media (min-width: 768px) {
   .customers .major {
+    padding-top: 2%;
     font-size: 3rem;
     font-family: "Roboto slab", serif;
     padding-bottom: 2%;
     margin-bottom: 4%;
-    width: 35%;
+    width: 37%;
   }
 }
 @media (min-width: 1000px) {
   .customers .major {
-    width: 32%;
+    width: 33%;
   }
 }
 .customers p {
@@ -681,9 +738,14 @@ footer {
   align-items: center;
   flex-direction: column;
 }
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
   footer {
     padding: 5% 5% 3%;
+  }
+}
+@media (min-width: 1000px) {
+  footer {
+    padding: 3% 5%;
   }
 }
 footer .footer-main {
