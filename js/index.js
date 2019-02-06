@@ -74,10 +74,10 @@ const icons = document.querySelectorAll(".icon");
 
 let rotate = 45;
 
-console.log(icons);
+// console.log(icons);
 
 icons.forEach(icon => {
-  console.log(icon);
+  // console.log(icon);
   icon.addEventListener("mouseover", () => {
     TweenMax.to(icon, 0.5, {
       rotation: 405
