@@ -94,9 +94,9 @@ btns.forEach(btn => {
 // });
 
 // make everything appear on load
-window.addEventListener("load", () => {
-  TweenMax.from("body", 1, {
-    opacity: 0,
-    delay: 0.2
-  });
-});
+// window.addEventListener("load", () => {
+//   TweenMax.from("body", 1, {
+//     opacity: 0,
+//     delay: 0.2
+//   });
+// });
