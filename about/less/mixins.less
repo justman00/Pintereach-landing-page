@@ -1,0 +1,50 @@
+// Mixins in here
+.flex-it(@j-content: center, @a-items: center) {
+  display: flex;
+  justify-content: @j-content;
+  align-items: @a-items;
+}
+
+.style-btn() {
+  width: 50%;
+  margin: 14% auto 10%;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-left: 0;
+  padding: 3% 0;
+  border-radius: 5px;
+  border: 2px solid @main-bg;
+  color: @main-bg;
+  background-color: @button-bg;
+  .flex-it;
+  letter-spacing: 0.25rem;
+  cursor: pointer;
+  outline: none;
+
+  // @media @tablet {
+  //   margin-top: 5%;
+  //   margin-bottom: 5%;
+  //   width: 20%;
+  //   padding: 1.5%;
+  // }
+
+  @media @tablet {
+    width: 80%;
+    // margin-top: 5%;
+    margin: 5% auto 0;
+  }
+
+  @media @mobile {
+    width: 40%;
+    padding: 3%;
+  }
+
+  // &:hover {
+  //   color: @button-bg;
+  //   background-color: @main-bg;
+  //   transform: scale(1.2);
+  //   transition-timing-function: cubic-bezier(0, 1.73, 1, 0.35);
+  //   // transform: scale(1.15);
+  //   transition: all 0.5s;
+  // }
+}

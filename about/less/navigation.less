@@ -1,0 +1,88 @@
+.header {
+  height: 35vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(orangered, 0.8),
+      rgba(orange, 0.8)
+    ),
+    url(../img/panorama.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  width: 100%;
+
+  .flex-it(center, flex-start);
+
+  // @media @mobile {
+  //   align-items: center;
+  // }
+
+  .navigation {
+    position: absolute;
+    // max-width: 1000px;
+    margin: 2% auto;
+
+    .flex-it();
+    flex-direction: column;
+
+    .name {
+      font-size: 5rem;
+      color: #fff;
+      font-weight: 900;
+      font-family: "Helvetica", sans-serif;
+      margin-top: 13%;
+
+      @media @mobile {
+        margin-top: 15%;
+        font-size: 4rem;
+        font-weight: 700;
+      }
+    }
+
+    nav {
+      .flex-it(space-between);
+      // margin: 2% 0;
+      width: 100%;
+      // background-color: #fff;
+
+      .burger-logo {
+        width: 6.5%;
+        cursor: pointer;
+
+        img {
+          width: 100%;
+        }
+
+        @media @mobile {
+          width: 8%;
+          margin: 3%;
+          // padding: 5%;
+        }
+      }
+
+      .nav-items {
+        .flex-it(space-between);
+        width: 60%;
+
+        @media @mobile {
+          width: 80%;
+        }
+
+        a {
+          padding: 0;
+          // border-top: 2px solid orangered;
+          width: 100%;
+          text-align: center;
+
+          text-decoration: none;
+          color: #fff;
+          font-size: 1.8rem;
+          font-weight: 700;
+          visibility: hidden;
+          height: 0;
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

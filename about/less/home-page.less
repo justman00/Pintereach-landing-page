@@ -1,0 +1,332 @@
+.intro {
+  margin-top: 10%;
+  padding-bottom: 10%;
+  border-bottom: 1px solid lightgray;
+
+  .flex-it(space-between, baseline);
+
+  @media @mobile {
+    flex-direction: column;
+  }
+
+  h3 {
+    font-size: 2rem;
+    font-size: "Helvetica", sans-serif;
+    // color: orangered;
+    font-weight: 900;
+    margin-bottom: 6%;
+  }
+
+  .description {
+    .flex-it(flex-start, flex-start);
+    flex-direction: column;
+    width: 45%;
+
+    @media @mobile {
+      width: 100%;
+    }
+
+    p {
+      font-size: 1.6rem;
+      line-height: 1.25;
+      margin-bottom: 5%;
+    }
+  }
+
+  .stats {
+    width: 40%;
+
+    @media @mobile {
+      margin-top: 5%;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    h3 {
+      @media @mobile {
+        display: none;
+      }
+    }
+
+    .num {
+      margin-bottom: 5%;
+
+      &-text {
+        font-size: 2.6rem;
+        font-weight: 700;
+        color: orangered;
+        margin-bottom: 3%;
+      }
+
+      &-desc {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: gray;
+        opacity: 0.75;
+      }
+    }
+  }
+}
+
+.investors {
+  margin-top: 6%;
+
+  @media @mobile {
+    margin-top: 15%;
+  }
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 900;
+    margin-bottom: 0;
+
+    @media @mobile {
+      margin-bottom: 5%;
+    }
+  }
+
+  &-imgs {
+    .flex-it(space-between, center);
+
+    @media @mobile {
+      flex-wrap: wrap;
+      margin-top: 10%;
+    }
+
+    .logo-img {
+      width: 20%;
+
+      @media @mobile {
+        width: 45%;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.jobs {
+  margin-top: 3%;
+  height: 35vh;
+  background-image: linear-gradient(to right, rgba(#fff, 0), rgba(#fff, 0.5)),
+    url(../img/office-2.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+
+  .flex-it(flex-end, center);
+
+  @media @mobile {
+    .flex-it();
+  }
+
+  &-content {
+    background-color: #fff;
+    position: absolute;
+    width: 30%;
+    padding: 2%;
+    right: 25px;
+
+    @media @tablet {
+      width: 50%;
+      right: 0;
+    }
+
+    @media @mobile {
+      width: 80%;
+    }
+
+    h3 {
+      font-size: 2rem;
+      font-weight: 900;
+      margin-bottom: 10%;
+
+      @media @mobile {
+        margin-bottom: 5%;
+        font-size: 1.8rem;
+      }
+    }
+
+    p {
+      font-size: 1.6rem;
+      line-height: 1.25;
+      margin-bottom: 4%;
+
+      @media @mobile {
+        font-size: 1.4rem;
+      }
+    }
+
+    .custom-btn {
+      .style-btn();
+      margin-bottom: 0;
+      text-transform: uppercase;
+      margin-top: 5%;
+
+      @media @mobile {
+        width: 70%;
+        margin-bottom: 5%;
+      }
+    }
+  }
+}
+
+.details {
+  margin-top: 3%;
+  .flex-it(space-between, baseline);
+  padding-bottom: 1.5%;
+  border-bottom: 1px solid lightgray;
+
+  @media @mobile {
+    flex-direction: column;
+    margin-top: 10%;
+  }
+
+  .detail {
+    width: 49%;
+    padding: 5% 5% 2%;
+    .flex-it();
+    flex-direction: column;
+
+    @media @mobile {
+      width: 100%;
+      padding-bottom: 7%;
+    }
+
+    &:first-child {
+      border-right: 1px solid lightgray;
+
+      @media @mobile {
+        border-right: 0;
+        border-bottom: 1px solid lightgray;
+      }
+    }
+
+    &:last-child {
+      @media @mobile {
+        margin-top: 7%;
+      }
+    }
+
+    h3 {
+      margin: 5% 0;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1.6rem;
+      margin-bottom: 5%;
+      line-height: 1.25;
+      text-align: center;
+    }
+
+    button {
+      .style-btn();
+      margin: 0 auto;
+      text-transform: uppercase;
+
+      @media @mobile {
+        width: 80%;
+      }
+    }
+
+    img {
+      width: 80px;
+    }
+  }
+}
+
+// contact section
+
+.contact {
+  margin-top: 5%;
+  margin-bottom: 10%;
+
+  @media @mobile {
+    margin-top: 10%;
+  }
+
+  h3 {
+    margin: 5% 0;
+    font-size: 2rem;
+    font-weight: 700;
+
+    @media @mobile {
+      margin-bottom: 10%;
+    }
+  }
+
+  .items {
+    .flex-it(space-between, baseline);
+
+    @media @mobile {
+      .flex-it();
+      flex-direction: column;
+    }
+
+    .item {
+      width: 22%;
+      .flex-it(space-between, center);
+      @media @tablet {
+        .flex-it();
+        flex-direction: column;
+      }
+
+      &:last-child {
+        @media @mobile {
+          margin-bottom: 0;
+        }
+      }
+
+      @media @mobile {
+        width: 100%;
+        margin-bottom: 8%;
+      }
+
+      i {
+        font-size: 3rem;
+        color: orangered;
+      }
+
+      .text {
+        display: flex;
+        flex-direction: column;
+
+        @media @tablet {
+          justify-content: center;
+          align-items: center;
+        }
+
+        h4 {
+          font-size: 1.8rem;
+          font-weight: 700;
+          margin-bottom: 10%;
+
+          @media @tablet {
+            margin-top: 10%;
+          }
+        }
+
+        a {
+          color: orangered;
+          font-size: 1.6rem;
+        }
+
+        p {
+          font-size: 1.6rem;
+          margin-bottom: 2%;
+          color: gray;
+
+          @media @tablet {
+            text-align: center;
+            line-height: 1.25;
+          }
+        }
+      }
+    }
+  }
+}
